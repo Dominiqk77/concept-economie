@@ -127,7 +127,7 @@
 
     <!-- Hero Video Start -->
     <div class="container-fluid p-0 pb-5 position-relative hero-video wow fadeIn" data-wow-delay="0.1s">
-        <video class="hero-vid" autoplay muted loop playsinline preload="metadata" poster="img/carousel-1.jpg">
+        <video class="hero-vid" autoplay muted loop playsinline preload="auto" poster="img/hero-poster.jpg">
             <source src="img/hero.mp4" type="video/mp4">
         </video>
         <div class="hero-vid-overlay"></div>
@@ -717,6 +717,7 @@
  f.addEventListener("submit",function(e){e.preventDefault();nx();});rd();
 })();
 </script>
+<script>(function(){var v=document.querySelector(".hero-vid");if(!v)return;v.muted=true;v.setAttribute("muted","");function go(){var p=v.play();if(p&&p.catch)p.catch(function(){});}go();v.addEventListener("canplay",go);document.addEventListener("click",go,{once:true});document.addEventListener("touchstart",go,{once:true});})();</script>
 </body>
 
 </html>
